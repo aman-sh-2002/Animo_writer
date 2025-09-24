@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aman Sharma — Resume</title>
+  <style>
+    :root{
+      --accent:#0b6efd;
+      --muted:#6b7280;
+      --bg:#f7fafc;
+      --card:#ffffff;
+      --maxw:900px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    body{
+      margin:0;
+      background:var(--bg);
+      color:#111827;
+      display:flex;
+      justify-content:center;
+      padding:28px;
+    }
+    .container{
+      width:100%;
+      max-width:var(--maxw);
+      background:var(--card);
+      border-radius:12px;
+      box-shadow:0 8px 30px rgba(2,6,23,0.08);
+      overflow:hidden;
+      display:grid;
+      grid-template-columns: 1fr 320px;
+    }
+    header{
+      padding:28px 32px;
+      border-bottom:1px solid #eef2f7;
+      grid-column:1/-1;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:16px;
+    }
+    .name {
+      font-size:22px;
+      font-weight:700;
+      letter-spacing:0.2px;
+    }
+    .sub {
+      color:var(--muted);
+      font-size:14px;
+      margin-top:6px;
+    }
+    .contact {
+      text-align:right;
+      font-size:14px;
+      color:var(--muted);
+    }
+    .contact a{ color:var(--accent); text-decoration:none; }
+    main{
+      padding:24px 32px;
+      display:block;
+    }
+    aside{
+      padding:24px;
+      border-left:1px solid #eef2f7;
+      background:linear-gradient(180deg, rgba(11,110,253,0.02), transparent);
+    }
+    section{ margin-bottom:20px; }
+    h2{
+      font-size:14px;
+      text-transform:uppercase;
+      letter-spacing:1px;
+      margin:0 0 10px 0;
+      color:#0f172a;
+    }
+    p.lead{
+      margin:0 0 10px 0;
+      color:#0f172a;
+      line-height:1.45;
+    }
+    .muted{ color:var(--muted); font-size:14px; }
+    ul{ margin:8px 0 0 18px; padding:0; }
+    li{ margin:6px 0; line-height:1.45; }
+    .job{
+      margin-bottom:10px;
+    }
+    .job .title{
+      font-weight:600;
+      font-size:15px;
+      margin-right:6px;
+    }
+    .meta{
+      color:var(--muted);
+      font-size:13px;
+    }
+    .skills { display:flex; flex-wrap:wrap; gap:8px; }
+    .chip{
+      background:#eef2ff;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:13px;
+      color:#073a8c;
+    }
+    .two-col{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+    footer{
+      grid-column:1/-1;
+      padding:18px 32px;
+      border-top:1px solid #eef2f7;
+      text-align:center;
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    /* Responsive */
+    @media (max-width:880px){
+      .container{ grid-template-columns: 1fr; }
+      aside{ border-left:none; border-top:1px solid #eef2f7; }
+      header{ flex-direction:column; align-items:flex-start; gap:8px; }
+      .contact { text-align:left; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="article" aria-label="Aman Sharma resume">
+    <header>
+      <div>
+        <div class="name">Aman Sharma</div>
+        <div class="sub">MBA candidate (Marketing & Data Analytics) — Jawaharlal Nehru University (JNU), 2024–2026</div>
+      </div>
+      <div class="contact">
+        New Delhi, India<br>
+        <a href="mailto:amansharmaparashar124567@gmail.com">amansharmaparashar124567@gmail.com</a> • +91 96502 93351<br>
+        <a href="https://www.linkedin.com/in/aman-sharma77" target="_blank" rel="noopener">linkedin.com/in/aman-sharma77</a>
+      </div>
+    </header>
+
+    <main>
+      <section aria-labelledby="summary">
+        <h2 id="summary">Professional Summary</h2>
+        <p class="lead">MBA candidate (Marketing & Data Analytics, JNU 2026) with hands-on experience in Python, R, SQL, Power BI, Tableau, and Excel. Background in finance, accounts, and marketing analytics — skilled at designing dashboards, analyzing KPIs, and delivering actionable insights that support business growth.</p>
+      </section>
+
+      <section aria-labelledby="experience">
+        <h2 id="experience">Professional Experience</h2>
+
+        <div class="job">
+          <div><span class="title">Marketing Intern</span> <span class="meta">— TVS Credit Services | New Delhi | Jun 2024 – Jul 2024</span></div>
+          <ul>
+            <li>Supported branding & communication campaigns by creating 10+ marketing creatives.</li>
+            <li>Analyzed campaign performance data using Excel & Power BI; recommended improvements that enhanced engagement by 12%.</li>
+            <li>Coordinated with cross-functional teams to deliver consistent brand messaging.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div><span class="title">Finance & Accounts</span> <span class="meta">— Anil Ashok & Associates | New Delhi | Feb 2023 – May 2023</span></div>
+          <ul>
+            <li>Reconciled accounts payable/receivable and prepared financial reports for 20+ clients.</li>
+            <li>Automated reconciliation templates in Excel, reducing manual work by 20%.</li>
+            <li>Ensured compliance with accounting standards and improved reporting accuracy.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section aria-labelledby="projects">
+        <h2 id="projects">Projects</h2>
+        <ul>
+          <li><strong>Customer Churn Prediction</strong> — Python (Pandas), Logistic Regression; achieved ~85% accuracy to identify churn factors.</li>
+          <li><strong>Sales Dashboard</strong> — Power BI; designed an interactive dashboard tracking revenue, region-wise sales, and customer KPIs.</li>
+          <li><strong>Market Research & Data Interpretation</strong> — R; applied t-tests and regression analysis on survey data and visualized insights with density plots.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="education">
+        <h2 id="education">Education</h2>
+        <div class="job">
+          <div><span class="title">MBA — Jawaharlal Nehru University (JNU)</span> <span class="meta">| New Delhi | 2024 – 2026</span></div>
+          <div class="muted">Specialization: Marketing & Data Analytics</div>
+        </div>
+        <div class="job">
+          <div><span class="title">BBA — Chaudhary Charan Singh University</span> <span class="meta">| 2020 – 2023</span></div>
+        </div>
+      </section>
+    </main>
+
+    <aside>
+      <section aria-labelledby="skills">
+        <h2 id="skills">Technical Skills</h2>
+        <div class="skills" role="list">
+          <span class="chip">Python (Pandas, NumPy, Matplotlib)</span>
+          <span class="chip">R</span>
+          <span class="chip">SQL</span>
+          <span class="chip">Power BI</span>
+          <span class="chip">Tableau</span>
+          <span class="chip">Advanced Excel</span>
+          <span class="chip">Google Analytics</span>
+          <span class="chip">MS PowerPoint</span>
+        </div>
+      </section>
+
+      <section aria-labelledby="methods">
+        <h2 id="methods">Statistics & Methods</h2>
+        <ul>
+          <li>Hypothesis Testing</li>
+          <li>Regression Analysis</li>
+          <li>Probability & Correlation</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="certs">
+        <h2 id="certs">Certifications</h2>
+        <ul>
+          <li>Data Science Specialization (Coursera)</li>
+          <li>Power BI Data Visualization</li>
+          <li>Google Analytics Fundamentals</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="strengths">
+        <h2 id="strengths">Strengths</h2>
+        <ul>
+          <li>Analytical mindset</li>
+          <li>Problem-solving</li>
+          <li>Strong communication</li>
+          <li>Data-driven decision-making</li>
+        </ul>
+      </section>
+    </aside>
+
+    <footer>
+      Content based on the uploaded resume. :contentReference[oaicite:1]{index=1}
+    </footer>
+  </div>
+</body>
+</html>
